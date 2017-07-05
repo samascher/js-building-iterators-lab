@@ -20,7 +20,7 @@ var numArray = [0,1,10,100,1000];
 
 
 
-/* myMap */
+// myMap */
 
 /*var input = ["a","b","c"];
 var output = myMap(input, function capitalize(v){

@@ -4,7 +4,28 @@
 function myReduce(arr, callback) {
 
 //  CODE INSIDE HERE   //
+// var accumulator = 0;
+// for (var i = 0; i < arr.length; i++) {
+// 	accumulator += callback(arr[i], i, arr);
+// 	console.log(accumulator);
 
+// 	if (typeof(initialValue) == "undefined"){
+// 		i++;
+// 		previousValue = arr[0];
+// 	} else {
+// 	previousValue = initialValue;
+// 	}
+// }
+
+// return accumulator;
+
+// }
+
+previousValue = arr[0];
+	for(var i=1; i< arr.length; i++) {
+	previousValue = callback(previousValue, arr[i], i, arr);
+	}
+return previousValue;
 }
 
 /*
